@@ -7,16 +7,40 @@ import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { styled } from '@material-ui/styles';
+
+
+
+const MyButton = styled(Button)({
+  background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+  border: 0,
+  borderRadius: 3,
+  boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+  color: 'white',
+  height: 48,
+  padding: '0 30px',
+  
+});
+
+const MyCard = styled(Card)(
+  {
+    backgroundColor: 'rgba(247,247,247,.45)',
+    positions: 'relative',
+    padding:'10px 5px'
+
+  }
+)
+
 
 const QuoteMachine = ({ assignNewQuoteIndex, selectedQuote }) => (
-  <Card>
+  <MyCard >
     <CardContent>
       <Typography id="text">
         {selectedQuote.quote} - <span id="author">{selectedQuote.author}</span>
       </Typography>
     </CardContent>
     <CardActions>
-      <Button id="new-quote" size="small" onClick={assignNewQuoteIndex}>Next Quote</Button>
+      <MyButton id="new-quote" size="small" onClick={assignNewQuoteIndex}>Next Quote</MyButton>
       <IconButton
         id="tweet-quote"
         target="_blank"
@@ -32,7 +56,7 @@ const QuoteMachine = ({ assignNewQuoteIndex, selectedQuote }) => (
         <FontAwesomeIcon icon = {faFacebook} />
       </IconButton>
     </CardActions>
-  </Card>
+  </MyCard>
 );
 
 export default QuoteMachine 

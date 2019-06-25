@@ -1,4 +1,9 @@
 body {
+  background: url("https://previews.dropbox.com/p/thumb/AAfUBtLHFeFlUPtWDuUjADPoXlgD56B8ROwrvbqr5xPmP-WA7xJq67bs7WC4hJK9VGWoRxEXwD5tpp3zF7c6wN8lj_JAW1QNDrWPsrU3sdg-r7F4VeCVya2_Dl1-Mk2ovTxlxFufCo8Az_ofcNZY2a0isv-eMTcth-qtCNY-1G3glhDd7VG8vYILpthUNSTGpA5ttDAjuVyhGqOnjXWKaMbBMqcUjuEUo286sIYSBteqkPQQztVzjSO44YGRrvjio0OHssm0hmlboR81u1jgP0vdj1IWvDSO5AzQwm2XONJckifGiAess7OWQ3_j20jpM0HhLbU2PFjNEUlrfP-73_nS/p.png?size=2048x1536&size_mode=3");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
